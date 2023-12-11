@@ -1,0 +1,16 @@
+/* python3 lox.py prog2.lox */
+
+class Doughtnut {
+	cook() {
+		print "Fry until golden brown.";
+	}
+}
+
+class BostonCream < Doughtnut {
+	cook() {
+		super.cook();
+		print "Pipe full of custard and coat with chocolate.";
+	}
+}
+
+BostonCream().cook();

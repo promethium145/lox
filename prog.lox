@@ -1,0 +1,11 @@
+/* python3 lox.py prog.lox */
+
+fun printer(n) {
+  if (n < 0) {
+    return;
+  }
+  print n;
+  printer(n - 1);
+}
+
+printer(10);
